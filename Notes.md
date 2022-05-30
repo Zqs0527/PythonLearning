@@ -40,6 +40,21 @@ while i <= stop:
     yield i
     i += step
 ```
+```
+def generator(start,stop):
+    while (start<=stop):
+        yield start
+        print(f'start={start}')
+        start+=1
+for counter in generator(3,4):
+    print(f'counter={counter}')
+
+The answer is:
+counter=3
+start=3
+counter=4
+start=4
+```
 
 ### Decorator
 It is a form of metaprogramming and it can be described as a special type of function that returns a wrapper function
@@ -52,4 +67,26 @@ def f1():
 x = f1
 x()
 ```
-A function is also an object. In order to call f2, you should call f1, because f1 returns an object of f2. Here f1 is the wrapper of f2
+A function is also an object. In order to call f2, you should call f1, because f1 returns an object of f2. Here f1 is the wrapper of f2.
+
+```
+f3 = f1(f3)
+f3()
+```
+f3 in its original form is no longer available
+
+Decorator, it takes the function which is defined directly after it. Following function will becomes the argument of the decorator function. It returns and assigns that name of f3
+
+## Structured data
+- List
+```
+game = ['name','age','year','boy']
+
+game[start:end:step]
+
+i = game.index('name')
+
+game.append('position')
+
+game.insert(0, 'play')
+```

@@ -30,5 +30,5 @@ def f1():
 
 
 if __name__ == '__main__':
-    x = f1
+    x = f1()
     x()
