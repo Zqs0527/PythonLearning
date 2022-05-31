@@ -89,4 +89,37 @@ i = game.index('name')
 game.append('position')
 
 game.insert(0, 'play')
+
+```
+game.pop() is to pop the last item
+- Set
+
+`-` can be used to check if elements in one set but not in the other set
+
+`|` in one set or the other set or in both
+
+`^` XOR
+- List comprehension
+
+```
+from math import pi
+[x for x in seq if x%3==0]
+{x for x in 'appliepie' if x not in 'pd'}
+```
+- Misxed structure
+
+## Class
+First argument is `self`, it is reference to the object. `.` is used to dereference the methods in the class.
+
+An instance of class is called an object. It is calling the class like a function. 
+
+Constructor
+```
+def __init__(self, type, name, sound):
+    self._type = type
+    self._name = name
+    self._sound = sound
+
+def type(self):
+    return self._type
 ```
