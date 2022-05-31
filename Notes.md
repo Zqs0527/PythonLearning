@@ -115,6 +115,7 @@ An instance of class is called an object. It is calling the class like a functio
 
 Constructor
 ```
+x = [1,2,3]
 def __init__(self, type, name, sound):
     self._type = type
     self._name = name
@@ -123,3 +124,6 @@ def __init__(self, type, name, sound):
 def type(self):
     return self._type
 ```
+In above lines, `self._type` is the object variable. `x` is the class variable. `x` is not encapsulated. It is not suggested to put a mutable data in a class.
+
+A variable with an underscore is considered as a private variable, in python this is not true, but for good practice, use an underscore to indicate that the variable is not accessable.
