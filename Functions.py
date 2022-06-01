@@ -4,6 +4,14 @@ def main():
     x = ("rule", "yellow")
     example(*x)
     kitten()
+    try:
+        x = 5/3
+    except  ValueError:
+        print('I caught a ValueError')
+    else: # if try is successful, then come to else
+        print('No error')
+        print(x)
+
 
 def kitten():
     print('Meow.')
