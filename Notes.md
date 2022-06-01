@@ -127,3 +127,16 @@ def type(self):
 In above lines, `self._type` is the object variable. `x` is the class variable. `x` is not encapsulated. It is not suggested to put a mutable data in a class.
 
 A variable with an underscore is considered as a private variable, in python this is not true, but for good practice, use an underscore to indicate that the variable is not accessable.
+
+### String
+String itself is a first class object
+```
+class MyString(str):
+    def __str__(self):
+        return self[::-1]
+```
+`format()` -> `print('the number is {:,}.format(x)')`
+
+`{x:.3f}`
+
+

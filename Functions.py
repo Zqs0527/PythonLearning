@@ -1,4 +1,5 @@
 def main():
+    print ( 'Hello,  World. '.capitalize())
     inputs = dict(x="ttt",y="ssss")
     example_keywords_arguments(**inputs)
     x = ("rule", "yellow")
@@ -38,5 +39,4 @@ def f1():
 
 
 if __name__ == '__main__':
-    x = f1()
-    x()
+    main()
