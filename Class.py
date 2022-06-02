@@ -1,3 +1,4 @@
+import sys, os
 class Duck:
     sound = 'Quack, quack'
     movement = 'Walks like a duck'
@@ -18,6 +19,12 @@ class Duck:
 
 
 def main():
+    v = sys.platform
+    v1 = os.name
+    stringofPath = os.getenv('PATH')
+    print(v)
+    print(v1)
+    print(stringofPath)
     donald = Duck()
     donald.move()
     donald.quak()

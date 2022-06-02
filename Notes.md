@@ -139,4 +139,31 @@ class MyString(str):
 
 `{x:.3f}`
 
+### File I/O
+`CR`: carriage return
+`LF`: line feed character
+
+### Built in functions
+`divmod(x,3)` will return a tuple which contains quotient and remainder
+
+`complex(47,73)` will return complex value `47+73j`
+
+```
+class bunny:
+    def __init__(self,n):
+        self._n = n
+    def __repr__(self):
+        return f'the number of bunny is {self._n}'
+    def __str__(self):
+        retturn f'something'
+s = bunny(47)
+print(repr(s))
+```
+`repr()` gives the best string representation of the object
+`ascii()`
+
+```
+if __name__ ==  '__main__':    main( )
+```
+Above line allows you to test your script when running it as a stand-alone program.
 
