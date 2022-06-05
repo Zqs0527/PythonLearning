@@ -14,4 +14,13 @@
 
 ```
 class Book(): # parenthese is not required, only if the class is inhenrited from another class
+    self.__secret = "This is a secret"
 ```
+Attributes with double underscores can't be accessed outside of the class. Prefixing the attribute name with the class name. This is called **name mangling**. This is prevent subclass inadvertently overriding the attribute, but other class can subvert simply by using the class name
+```
+b1 = Book()
+print(b1._Book__secret)
+```
+### Static methods
+
+- They don't modify the state of either the class or a specific object instance. It is useful when you don't need to access any properties of a particular object or the class itself. However, it makes sense the method belongs to the class
