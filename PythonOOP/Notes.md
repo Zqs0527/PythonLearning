@@ -24,3 +24,21 @@ print(b1._Book__secret)
 ### Static methods
 
 - They don't modify the state of either the class or a specific object instance. It is useful when you don't need to access any properties of a particular object or the class itself. However, it makes sense the method belongs to the class
+
+### Base class
+`super().__init__()`
+- Abstract base classes
+
+`from abc import ABC, abstractmethod`
+
+It is a very useful tool for setting constraints among the consumer of your classes
+
+Method resolution order: The look up starts in the current class. 
+```
+class C (A, B)
+```
+Class A and class B have the same attribute. When the attribute is printed in using the instance of C, it will be the value of the attribute in class A.
+```
+C.__mro__
+```
+Above `__mro__` stands for method resolution order
