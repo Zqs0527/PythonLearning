@@ -34,6 +34,13 @@ class Book:
     def __str__(self) -> str:
         return f"Book name: {self.name}, price: {self.price}, number of chapters: {self.chapters}"
 
+    def __call__(self, name, price, discount, chapters) :
+        self.name = name
+        self.price = price
+        self.discount = discount
+        self.chapters = chapters
+
 b1 = Book("Actie",50.0,0.5,56)
-# b1.price = 30.9
+print(b1)
+b1("Gang", 43.5, 0.2, 45)
 print(b1)

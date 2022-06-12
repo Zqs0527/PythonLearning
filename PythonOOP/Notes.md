@@ -69,3 +69,15 @@ def __getattribute__(self, name):
     return name
 ```
 Use `super().__getattribute__()` is to avoid recursion
+
+`__call__` method can be used to call the object like a function
+
+### Data classes
+It is implemented in python version >= 3.7
+
+`dataclass` also implements the `__repr__` and `__eq__` methods
+
+`__post_init__` function to customize additional property after the object has been initialized via built-in `__init__`
+
+We can set default value for the attribute of the class
+
