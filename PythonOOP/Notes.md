@@ -42,3 +42,18 @@ Class A and class B have the same attribute. When the attribute is printed in us
 C.__mro__
 ```
 Above `__mro__` stands for method resolution order
+
+### Python 'Magic' Methods
+`def __str__()` method to return a string
+`def __repr__` method to return an obj 
+```
+def __repr__(self):
+    return f"title={self.title},name={self.name}"
+
+print(repr(obj))
+```
+`def __eq__()` checks for the equality between two objects
+
+`def __ge__()` establishes >= relationship with another obj
+
+`def __lt__()` establishes <= relationship with another obj
