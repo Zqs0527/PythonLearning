@@ -57,3 +57,15 @@ print(repr(obj))
 `def __ge__()` establishes >= relationship with another obj
 
 `def __lt__()` establishes <= relationship with another obj
+
+`def __getattribute__(self, name)`
+```
+def __getattribute__(self, name):
+    if name == 'price':
+        property = super().__getattribute__('price')
+        discount = super().__getattribute__('discount')
+        return poperty - property*discount
+
+    return name
+```
+Use `super().__getattribute__()` is to avoid recursion
