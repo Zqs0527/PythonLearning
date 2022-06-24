@@ -1,6 +1,9 @@
 # Datetime module
 from datetime import datetime, timedelta
 from html.parser import HTMLParser
+import urllib.request
+import json
+import textwrap
 
 now = datetime.now()
 
@@ -46,4 +49,11 @@ parser_html.feed("""<html lang="en">
 </body>
 </html>""")
 
-print()
+with urllib.request.urlopen("https://www.googleapis.com/books/v1/volumes?q=isbn:1101904224") as f:
+    text_file = f.read()
+    decoded_text = text_file.decode('utf-8')
+    print(textwrap.fill(decoded_text, width=50))
+
+print("----------------------------")
+obj_json = json.loads(decoded_text)
+print(obj_json['kind'])
