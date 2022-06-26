@@ -17,3 +17,5 @@ Argument
 - The value passed to the function
 
 Functions search for variables locally first. If the variable is not in the local scope, it expands the search to the global scope.
+
+`dir('some string')` gives a list of attributes and methods which can be used
