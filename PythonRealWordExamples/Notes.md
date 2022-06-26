@@ -19,3 +19,23 @@ Argument
 Functions search for variables locally first. If the variable is not in the local scope, it expands the search to the global scope.
 
 `dir('some string')` gives a list of attributes and methods which can be used
+
+Binding the name to the object
+
+It is possible to have multiple names for the same object. 
+```
+class shirts:
+    def __init__(self):
+        self.clean = True
+    
+    def make_clean(self):
+        self.clean = True
+    
+    def make_dirty(self):
+        self.clean = False
+```
+`red_shirts = shirts()`
+
+`crimson_shirts = red_shirts`
+
+Here `crimson_shirts` and `red_shirts` are referring to the same object. If the attributes of the `crimson_shirts` changed, the attributes of the `red_shirts` will also change
