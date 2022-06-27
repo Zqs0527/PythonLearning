@@ -49,3 +49,7 @@ The child class can override the method which is inherited from the parent class
 `from random import randint` this will only import the `randint` method
 
 To avoid the possible conflicts, the name of the modules can be renamed by calling `import random as rand`
+
+Modules & Packages
+- Module: Single python scripts which contain handful functions and classes relavent to the same type of task
+- Package: It contains several modules
