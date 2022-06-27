@@ -39,3 +39,13 @@ class shirts:
 `crimson_shirts = red_shirts`
 
 Here `crimson_shirts` and `red_shirts` are referring to the same object. If the attributes of the `crimson_shirts` changed, the attributes of the `red_shirts` will also change
+
+Immutable and mutable data type. `string` type object is immutable. If one is changing the content of the string, there will be a `string` object created. It is not like a `list` type object
+
+The child class can override the method which is inherited from the parent class.
+
+`import random` is to import the entire module
+
+`from random import randint` this will only import the `randint` method
+
+To avoid the possible conflicts, the name of the modules can be renamed by calling `import random as rand`
