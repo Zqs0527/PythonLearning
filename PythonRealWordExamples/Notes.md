@@ -53,3 +53,5 @@ To avoid the possible conflicts, the name of the modules can be renamed by calli
 Modules & Packages
 - Module: Single python scripts which contain handful functions and classes relavent to the same type of task
 - Package: It contains several modules
+
+Multidimensional lists
