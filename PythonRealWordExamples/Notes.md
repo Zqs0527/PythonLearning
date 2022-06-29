@@ -55,3 +55,14 @@ Modules & Packages
 - Package: It contains several modules
 
 Multidimensional lists
+```
+a = [[1,2,3],[2,3,4]]
+```
+`a` is a 2x3 matrix
+
+Queues are operating on first in first out (FIFO). 
+- If one is calling on an empty queue, the program will wait until the method completes before continuing execution -> Blocking method
+- Blocking works well when multiple threads or processes use queues to share information
+    - `get(false)`: let user know the queue is empty
+
+Stacks are operating on last in first out (LIFO)
