@@ -66,3 +66,7 @@ Queues are operating on first in first out (FIFO).
     - `get(false)`: let user know the queue is empty
 
 Stacks are operating on last in first out (LIFO)
+
+Dictionary -> Hash Table 
+
+`hash(key)`
