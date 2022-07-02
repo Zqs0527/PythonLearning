@@ -70,3 +70,12 @@ Stacks are operating on last in first out (LIFO)
 Dictionary -> Hash Table 
 
 `hash(key)`
+
+Reverse lookup issues for dictionaries
+```
+def caller_id(lookup_number):
+    for name,num in rolodex.items():
+        if num == lookup_number:
+            return name
+```
+There is no order defined in the dictionary
