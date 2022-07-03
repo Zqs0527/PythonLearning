@@ -79,3 +79,14 @@ def caller_id(lookup_number):
             return name
 ```
 There is no order defined in the dictionary
+
+Dictionary is using hash that can be quicker than a long if/else chain. If the function is going to make a decision based on the value of a single variable or expression, then use dictionary
+
+Be careful when add or remove items from a list with a `for` loop
+```
+sink = ['a','b','c']
+
+for x in list(sink):
+    sink.remove(x)
+```
+`for x in list(sink)` this will create a copy of the `sink`. In this way, the operation on the orignal list can be properly handled
