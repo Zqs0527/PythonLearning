@@ -90,3 +90,16 @@ for x in list(sink):
     sink.remove(x)
 ```
 `for x in list(sink)` this will create a copy of the `sink`. In this way, the operation on the orignal list can be properly handled
+
+
+```
+try:
+    webpage = urllib.request.urlopen('http://www.google.com')
+except:
+    print(Çould not access webpage)
+else:
+    for lin in webpage:
+        print(line)
+```
+
+The `else` statement will be excuted only the `try` statement is true
