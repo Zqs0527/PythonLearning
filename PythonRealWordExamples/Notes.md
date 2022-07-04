@@ -103,3 +103,10 @@ else:
 ```
 
 The `else` statement will be excuted only the `try` statement is true
+
+Polling and event-driven programming
+
+Polling is not an efficient method. Used in the micro-software file I/O. implement the time pause to waste the CPU `time.sleep(1)`
+
+Event: Handle the event once a time. 
+`tkinter` create the graphic user interface. Event-driven programming. It does in the order of events occurs
